@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,55 +9,18 @@
 </head>
 <body>
     <div id="main">
-        <div id="heading">
-            <h1>string transforms</h1>
+        <h1>string transform</h1>
+        <input type="text" id="input-transform" placeholder="Enter text to transform">
+        <div id=" transform-buttons">
+            <button onclick="toLower()">Lower Case</button>
+            <button onclick="toUpper()">Upper Case</button>
+            <button onclick="toCamel()">Camel Case</button>
+            <button onclick="toPascal()">Pascal Case</button>
+            <button onclick="toSnake()">Snake Case</button>
+            <button onclick="toKebab()">Kebab Case</button>
+            <button onclick="toTrim()">Trim</button>
         </div>
-        <div>
-            <label for="input"></label>
-            <input type="text" id="input" placeholder="Enter text here">
-        </div>
-        <div id="output">
-            <div id="lower">
-                <button>lower case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-                
-            </div>
-            <div id="upper">
-                <button>upper case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-            </div>
-            <div id="camel">
-                <button>camel case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-                
-            </div>
-            <div id="pascal">
-                <button>pascal case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-                
-            </div>
-            <div id="snake">
-                <button>snake case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-                
-            </div>
-            <div id="kabab">
-                <button>kebab case</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-                
-            </div>
-            <div id="trim">
-                <button>trim</button>
-                <label for="input"></label>
-                <output type="text" id="input" placeholder="output will be displayed here">
-            </div>
-        </div>
+        <p id="output-transform">the output will show here</p>
     </div>
     <script src="script.js"></script>
 </body>
