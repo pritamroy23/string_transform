@@ -1,40 +1,28 @@
-
 function getInput() {
-  return document.getElementById("inputText").value;
+   return  document.getElementById("input-transform").value; 
 }
-
 function displayOutput(text) {
-  document.getElementById("outputText").innerText = text;
-}
+    document.getElementById("output-transform").innerText = text;
 
+}
 function toLower() {
-  displayOutput(getInput().toLowerCase());
-}
+    displayOutput(getInput().toLowerCase());
 
+}
 function toUpper() {
-  displayOutput(getInput().toUpperCase());
-}
+    displayOutput(getInput().toUpperCase())
 
-function toCamel() {
-  let words = getInput().toLowerCase().split(" ");
-  let result = words[0] + words.slice(1).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join("");
-  displayOutput(result);
 }
-
-function toPascal() {
-  let words = getInput().toLowerCase().split(" ");
-  let result = words.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join("");
-  displayOutput(result);
-}
-
 function toSnake() {
-  displayOutput(getInput().toLowerCase().replace(/\s+/g, "_"));
-}
+    displayOutput(getInput().replace(/\s+/g, '_').toLowerCase());
 
+}
 function toKebab() {
-  displayOutput(getInput().toLowerCase().replace(/\s+/g, "-"));
+    displayOutput(getInput().replace(/\s+/g, '-').toLowerCase());
+
+}
+function toTrim() {
+    displayOutput(getInput().trim());
+
 }
 
-function toTrim() {
-  displayOutput(getInput().trim());
-}
